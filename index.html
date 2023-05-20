@@ -5,14 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- custom css-->
     <link rel="stylesheet" href="./assets/css/main.css">
+
     <title>Portfolio - Anderson Cordero</title>
 </head>
 <body>
-    <header>
-        <nav></nav>
+    <header class="header">
+        <nav class="nav">
+            <div class="cont-img">
+                <img src="./assets/img/img-nav.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="#" class="underline">Home</a></li>
+                <li><a href="#" class="underline">About</a></li>
+                <li><a href="#" class="underline">My Knowledges</a></li>
+                <li><a href="#" class="underline">Projects</a></li>
+            </ul>
+            <div>
+                <span class="hamburguer-icon"><ion-icon name="reorder-four-outline" id="icon-nav"></ion-icon></span>
+            </div>
+        </nav>
     </header>
 
+    <!-- js -->
     <script src="./assets/js/index.js"></script>
+    <!-- ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
