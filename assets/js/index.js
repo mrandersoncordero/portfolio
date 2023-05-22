@@ -12,7 +12,18 @@ icon_hamburguer.addEventListener('click', function() {
     }
 });
 
-ScrollReveal().reveal('.info');
-ScrollReveal().reveal('.news-cards', {delay: 500});
-ScrollReveal().reveal('.cards-banner-one', {delay: 500});
-ScrollReveal().reveal('.cards-banner-two', {delay: 500});
+
+// scrolled
+
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header');
+    const navbar = document.querySelector('.nav');
+
+    if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+        navbar.classList.add('just');
+    } else {
+        header.classList.remove('scrolled');
+        navbar.classList.remove('just');
+    }
+});

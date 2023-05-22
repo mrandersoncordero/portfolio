@@ -32,8 +32,13 @@ body {
     padding: 20px;
     margin: auto;
     background-color: #ffffff; /* Color de fondo de la barra de navegación */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra debajo de la barra de navegación */
     position: fixed;
+    transition: 0.7s;
+}
+/* scroll */
+.header.scrolled {
+    background-color: #ffffff;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .inactive {
@@ -49,6 +54,7 @@ body {
     padding: 0px 16px 0px 16px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
 }
 
 .cont-img {
@@ -97,7 +103,6 @@ body {
     top: 104px;
     z-index: 998;
     left: -260px;
-    background-color: #fff;
     bottom: 0;
     width: 260px;
     overflow-y: auto;
